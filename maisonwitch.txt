@@ -7,9 +7,12 @@ il est à noter que la sorcière est complètement aveugle, et c'est pour cela q
 
 Les éléments nécéssaires à Gretel pour vaincre la sorcière sont de : 
 -Ouvrir le four
--Attirer la sorcière devant
+-Attirer la sorcière devant -> comment :
+	-Elle doit s'équiper du balai de la sorcière, et faire tomber les fioles de l'étagère, le bruit attire la sorcière, un point d'exclamation apparait lorsqu'on peut la pousser
 -Prendre (un peu, n'exagérons pas) de l'élan pour la pousser dedans.
 -Si elle ne referme pas le four en moins de 4-5 secondes, la sorcière ressort et game over, il faut donc bien penser à fermer le four.
+
+Gretel doit récupérer le couteau de cuisine pour défaire les liens qui attachent H.
 
 
  
