@@ -1,0 +1,15 @@
+PARTIE DANS LA MAISON
+
+Quand HG rentrent dans la maison, H se retrouve directement attrapé et enfermé à clé dans une cage.
+G se retrouve servante et elle doit aider la sorcière a cuisiner son frère -> timer à définir.
+Si elle ne réussit pas à se débarasser de la sorcière avant le temps imparti, ce sera son frère qui sera enfermé dans le four et GAME OVER.
+il est à noter que la sorcière est complètement aveugle, et c'est pour cela qu'elle fait de G sa servante.
+
+Les éléments nécéssaires à Gretel pour vaincre la sorcière sont de : 
+-Ouvrir le four
+-Attirer la sorcière devant
+-Prendre (un peu, n'exagérons pas) de l'élan pour la pousser dedans.
+-Si elle ne referme pas le four en moins de 4-5 secondes, la sorcière ressort et game over, il faut donc bien penser à fermer le four.
+
+
+ 
