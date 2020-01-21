@@ -5,7 +5,7 @@ using UnityEngine;
 public class Perso : MonoBehaviour
 {
 	public float pickupRange = 0.1f;
-	private GameObject objetInteract;
+	private Collider objetInteract;
 
 	[Header("Button List")]
 	public string interactButton;
@@ -16,7 +16,7 @@ public class Perso : MonoBehaviour
 
 	[Header("Inventory's Datas")]
 	public Transform itemPrefab;
-	public Transform invertorySlots;
+	public Transform inventorySlots;
 	public int slotsCount = 5;
 
 
@@ -29,8 +29,8 @@ public class Perso : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown(1)){
-        	objetInteract = collider.gameObject;
+        if(Input.GetButtonDown(interactButton)){
+        	objetInteract =  gameObject.GetComponent<Collider>();//collider.gameObject;
         	if (objetInteract.tag == itemTag){
         		//pick up
         		// check if inventory is full
@@ -40,8 +40,11 @@ public class Perso : MonoBehaviour
         		//however
         		else{
         			//make disappear object
-        			
+        			objetInteract.SetActive(false);
         			//integrate new item inventory
+                    Transform newItem;
+                    newItem = Instantiate(itemPrefab, Vector3.zero, Quaternion.identity) as Transform;
+                    newItem.SetParent(inventorySlots,false);
 
         		}
         			
