@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EtagereItem : MonoBehaviour {
 
     private Transform player;
     private Transform fiole;
     public GameObject explosionEffect;
-    public static boolean tombe;
+    public static bool tombe = false;
 
     private void Start()
     {
         fiole = GameObject.FindGameObjectWithTag("Etagere").transform;
-        tombe=false;
+        
     }
 
     public void Use() {
