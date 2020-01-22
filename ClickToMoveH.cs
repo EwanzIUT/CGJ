@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickToMove : MonoBehaviour
+public class ClickToMoveH : MonoBehaviour
 {
-  
+
 
     // Update is called once per frame
 
     private float speed = 6;
     private Vector3 targetPosition;
-   
+
 
     private bool isMoving = false;
     public Animator animator;
@@ -23,7 +23,7 @@ public class ClickToMove : MonoBehaviour
 
     void Update()
     {
-        
+
 
         animator.SetBool("bougeF", isMoving);
         animator.SetBool("Yplus", yplus);
@@ -53,18 +53,18 @@ public class ClickToMove : MonoBehaviour
 
     void setTargetPosition()
     {
-        targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition)+ new Vector3(1,0,0);
         targetPosition.z = transform.position.z;
- 
+
         isMoving = true;
 
     }
 
     void Move()
     {
-        
+
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-        
+
         if (transform.position == targetPosition)
         {
             isMoving = false;
@@ -72,7 +72,7 @@ public class ClickToMove : MonoBehaviour
 
     }
 
-    
+
     void avancedos()
     {
         if (transform.position.y < targetPosition.y)
