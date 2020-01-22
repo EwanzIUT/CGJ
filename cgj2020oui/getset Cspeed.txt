@@ -1,0 +1,11 @@
+public bool Bouge
+    {
+        get
+        {
+            return isMoving;
+        }
+        set
+        { 
+            animator.SetBool("bouge", isMoving);
+        }
+    }
