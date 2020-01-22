@@ -21,6 +21,7 @@ public class EtagereItem : MonoBehaviour {
         Destroy(gameObject);
         fiole.transform.position = Vector2.down * 5f;
         tombe=true;
+        Destroy(GameObject.FindGameObjectWithTag("Etagere"));
     }
 
 }
